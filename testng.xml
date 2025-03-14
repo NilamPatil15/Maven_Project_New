@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="courseName" value="Java"></parameter>
+    <parameter name="cityName" value="Pune"></parameter>
+    <parameter name="browserName" value="firefox"></parameter>
+    <listeners>
+        <listener class-name="testng.listner.Transformation"></listener>
+    </listeners>
+
+
+    <!--   <groups>
+           <run>
+               <include name="smoke"/>
+           </run>
+       </groups>-->
+    <test verbose="10" preserve-order="true" name="C:/Users/Nilesh/IdeaProjects/Maven_Project_New">
+        <classes>
+            <!--
+                       <class name="testng.basicOfTestNG.PriorityEx"></class>
+            -->
+<!--
+            <class name="testng.Parameterization.NeedOfParameterization_2"></class>
+-->
+            <class name="testng.basicOfTestNG.PriorityEx"></class>
+
+            <!--
+                        <class name="testng.basicOfTestNG.TestNGIntro"> </class>
+            -->
+
+        </classes>
+    </test>
+</suite>
